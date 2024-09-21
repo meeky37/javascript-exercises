@@ -11,11 +11,20 @@ const sumAll = function (min, max) {
   // Here's an optional article on it: https://www.freecodecamp.org/news/array-destructuring-in-es6-30e398f21d10/
   // if (min > max) [min, max] = [max, min];
   
-  let sum = 0;
-  for (let i = min; i <= max; i++) {
-    sum += i;
-  }
-  return sum;
+  // let sum = 0;
+  // for (let i = min; i <= max; i++) {
+  //   sum += i;
+  // }
+  // return sum;
+
+  // Personally think Gauss's summation formula should be considered...
+  Sum= (max(max+1)/2) - (((min-1)min)/2);
+  
+  return (max * (max + 1)) / 2 - ((min - 1) * min) / 2;
+
+
 };
+
+
 
 module.exports = sumAll;
